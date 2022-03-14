@@ -1,3 +1,5 @@
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+
  gcc -g p1final.c
  gdb ./a.out
 GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
@@ -16,9 +18,9 @@ For help, type "help".
 Type "apropos word" to search for commands related to "word"...
 Reading symbols from ./a.out...done.
 (gdb) b main
-Breakpoint 1 at 0x81a: file p1final.c, line 16.
+Breakpoint 1 at 0x822: file p1final.c, line 16.
 (gdb) r
-Starting program: /home/runner/IA2-Test1-Session2/a.out 
+Starting program: /home/runner/IA2-Test1-Session2-3/a.out 
 warning: Error disabling address space randomization: Operation not permitted
 
 Breakpoint 1, main () at p1final.c:16
@@ -26,13 +28,13 @@ Breakpoint 1, main () at p1final.c:16
 (gdb) n
 18    input(&base,&height);
 (gdb) n
-enter the values
-2
+enter the base and height of the triangle:
 1
-19    find_area(base,height,&area);
+2
+20    find_area(base,height,&area);
 (gdb) n
-20    output(base,height,area);
+21    output(base,height,area);
 (gdb) n
-area of triangle 2.000000 1.000000  is 1.000000
-21    return 0;
-(gdb)
+area of triangle with base 1.000000 and height 2.000000 is 1.000000
+22    return 0;
+(gdb) 
