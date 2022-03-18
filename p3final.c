@@ -7,7 +7,6 @@ int input_number()
   scanf("%d", &num);
   return num;
 }
-
 int is_composite(int n)
 {
   for (int i = 2; i <= n/2; i++)
@@ -17,7 +16,6 @@ int is_composite(int n)
   }
   return 0;
 }
-
 void output(int n, int isComposite)
 {
   if (isComposite)

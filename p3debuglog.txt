@@ -18,22 +18,18 @@ Reading symbols from ./a.out...done.
 (gdb) b main
 Breakpoint 1 at 0x84b: file p3final.c, line 31.
 (gdb) r
-Starting program: /home/runner/IA2-Test1-Session2-1/a.out 
+Starting program: /home/runner/IA2-Test1-Session2-5/a.out 
 warning: Error disabling address space randomization: Operation not permitted
 
 Breakpoint 1, main () at p3final.c:31
 31    int num = input_number();
 (gdb) n
 Enter the number:
-4
+5
 32    int res = is_composite(num);
 (gdb) n
 33    output(num, res);
 (gdb) n
-4 is a composite number
+5 is not a composite number
 34    return 0;
-(gdb) c
-Continuing.
-[Inferior 1 (process 85) exited normally]
 (gdb)
-
