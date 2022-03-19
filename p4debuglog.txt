@@ -1,3 +1,4 @@
+ gcc -g p4final.c
  gdb ./a.out
 GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
 Copyright (C) 2018 Free Software Foundation, Inc.
@@ -17,7 +18,7 @@ Reading symbols from ./a.out...done.
 (gdb) b main
 Breakpoint 1 at 0x8f8: file p4final.c, line 49.
 (gdb) r
-Starting program: /home/runner/IA2-Test1-Session2-1/a.out 
+Starting program: /home/runner/IA2-Test1-Session2-7/a.out 
 warning: Error disabling address space randomization: Operation not permitted
 
 Breakpoint 1, main () at p4final.c:49
@@ -26,30 +27,17 @@ Breakpoint 1, main () at p4final.c:49
 50    int length = input_array_size();
 (gdb) n
 Enter the length of the array:
-10
+5
 51    int data[length];
 (gdb) n
 52    input_array(length, data);
 (gdb) n
 Enter all values of the array:
-1
-2
-3
-4
-5
-6
-7
-8
-9
-0
+1 2 7 8 12
 53    int res = sum_composite_numbers(length, data);
 (gdb) n
 54    output(res);
 (gdb) n
-27
+20
 55    return 0;
-(gdb) n
-56  }(gdb) c
-Continuing.
-[Inferior 1 (process 23) exited normally]
 (gdb)
