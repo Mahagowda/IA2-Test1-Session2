@@ -25,7 +25,6 @@ int find_gcd(int a, int b)
   }
   return gcd;
 }
-
 void output(int a, int b, int gcd)
 {
   printf("the gcd %d and %d is %d\n",a,b,gcd);
