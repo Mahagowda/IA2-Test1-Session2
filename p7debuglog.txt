@@ -16,23 +16,22 @@ For help, type "help".
 Type "apropos word" to search for commands related to "word"...
 Reading symbols from ./a.out...done.
 (gdb) b main
-Breakpoint 1 at 0x877: file p7final.c, line 26.
+Breakpoint 1 at 0x877: file p7final.c, line 23.
 (gdb) r
-Starting program: /home/runner/IA2-Test1-Session2-2/a.out 
+Starting program: /home/runner/IA2-Test1-Session2-13/a.out 
 warning: Error disabling address space randomization: Operation not permitted
 
-Breakpoint 1, main () at p7final.c:26
-26  {
+Breakpoint 1, main () at p7final.c:23
+23  {
 (gdb) n
-27    Triangle ABC = input_triangle();
+24  Triangle ABC = input_triangle();
 (gdb) n
 Enter the base, altitude of a triangle:
-2
-3
-28    find_area(&ABC);
+2 3
+25  find_area(&ABC);
 (gdb) n
-29    output(ABC);
+26  output(ABC);
 (gdb) n
 The area of triangle with base = 2.000000 and altitude = 3.000000 is 3.000000
-30    return 0;
+27  return 0;
 (gdb)
